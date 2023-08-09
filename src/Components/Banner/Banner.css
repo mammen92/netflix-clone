@@ -1,0 +1,88 @@
+
+.banner{
+    /* background-image: url("https://th.bing.com/th/id/R.b3e100db8c52ea8adf857f361a6ac7f4?rik=Z3CG0unTDypRgw&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f40700000%2fStranger-Things-Season-2-Banner-stranger-things-40779224-3043-1082.jpg&ehk=z2GoVVKPyFM3g8wD7zQTz3YGkzHWGWsc6a5cgDIR3bw%3d&risl=&pid=ImgRaw&r=0");
+    height:60dvw; */
+    background-size:cover;
+    /* background-position: center; */
+    color:white;
+    padding-top: clamp(0.1rem, 20vw, 20rem);
+   }
+
+/* how to add an aspect ratio 
+to banner images */
+
+.banner-gradient{
+    background-image: linear-gradient(to top, rgb(20, 20, 20) 1%, rgba(0, 0, 0, 0));
+    /* height: 100%; */
+
+}
+
+.banner-content{
+    padding:2rem;
+    max-width: 60vw;
+   
+}
+
+.banner-buttons{
+   
+    display: flex;
+   
+}
+
+.play-group{
+    padding-right: .7rem;
+}
+
+.btn-play, .btn-more-info{
+    /* padding-top: clamp(1px, 8px,12px);
+    padding-bottom: clamp(1px, 8px, 12px);
+    padding-right: clamp(1px, 8px, 12px);
+    padding-left: clamp(1px, 8px, 12px);
+   */
+   padding:8px;
+   border-radius:5px;
+   border:none;
+   cursor: pointer;
+    font-size: clamp(.5rem, 2vw, 1rem);
+}
+
+
+.banner-title{
+font-size: clamp(1.3rem, 5vw , 3.5rem);
+    
+    font-family: 'Bebas Neue', sans-serif;;
+}
+
+.banner-description{
+    font-family: "Netflix Sans",
+        "Helvetica Neue",
+        "Segoe UI",
+        Roboto,
+        Ubuntu,
+        sans-serif;
+    font-size: clamp(.75em, 2vw, 1.2em);
+    padding-top:1rem;
+    }
+
+.btn-more-info{
+        background-color: rgba(51, 51, 51, 0.8);
+        color:white;
+    }
+
+.icon-spaces{
+        padding-right:.5rem;
+
+    }
+
+    @media (width<=600px) {
+        .banner-description{
+            display: none;
+        }
+       
+        
+        .banner-content{
+
+    max-width: 90vw;
+        }
+
+    }

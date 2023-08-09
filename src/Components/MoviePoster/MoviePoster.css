@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(20, 20, 20);
+}
+
+
+h3{
+    margin: 7px 10px 7px;
+}
+
+
+.movie-image{
+    padding:20px 13px 20px;
+    /* min-width:350px; */
+    height:clamp(230px,16vw,270px);
+    cursor: pointer;
+}
+
+.movie-image-small {
+    padding:13px 10px 13px;
+    height: clamp(250px, 17vw,300px);
+    cursor: pointer;
+}
+
+.movie-images{
+    display: flex; 
+    overflow-x: scroll;
+    overflow-y:hidden;
+}
+
+.movie-images::-webkit-scrollbar{
+    display: none;
+}
+
+.movie-posters{
+
+    color: white;
+}
+.movie-name{
+    font-size: clamp(0.5rem, 1vw + 0.7rem, 1.5rem);
+ 
+}
+
+.movie-image:hover{
+    transform: scale(1.1);
+}
+.movie-image-small:hover{
+        transform: scale(1.1);
+    }
